@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/fengmian/index",
+    "pages/word/word",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/shejiao/index"
+  ],
+  "tabBar": {
+    "backgroundColor": "#F7F7FA",
+    "borderStyle": "white",
+    "list": [
+      {
+         "pagePath": "pages/fengmian/index",
+         "text": "主页",
+          "iconPath": "images/home.png",
+          "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/word/word",
+        "text": "今日任务",
+        "iconPath": "images/danci.png",
+        "selectedIconPath": "images/danci-selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "辞典",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-selected.png"
+      },
+      {
+        "pagePath":"pages/shejiao/index",
+        "text":"社交",
+        "iconPath":"images/shejiao.jpg",
+        "selectedIconPath":"images/shejiao-selected.jpg"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

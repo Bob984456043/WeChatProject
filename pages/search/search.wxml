@@ -1,0 +1,20 @@
+<!--pages/search/search.wxml-->
+<view class="container">  
+  <image class="logo" src="/images/pika.png"></image>
+  <text class="name">辞典</text>
+  
+<!-- index.wxml -->
+
+<view class="section">
+  <input placeholder="请输入英文单词" bindinput='wordInput' focus="true" confirm-type="done"/>
+  <button type='primary' bindtap='btnClick'>查询</button>
+</view>
+
+<view class="textView">
+  <text>{{text}}</text>
+</view>
+
+<view class="senView">
+  <text >{{sentext}}</text>
+</view> 
+</view>
