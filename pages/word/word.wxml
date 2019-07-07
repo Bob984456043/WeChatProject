@@ -13,8 +13,4 @@
       <text class="word-next" bindtap="next">下一个</text>
     </view>
 
-     <view class="button-miss">
-      <text class="word-next" bindtap="gotoshujia">选择单词书</text>
-    </view>
-   
 </view>
