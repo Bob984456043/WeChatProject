@@ -1,2 +1,16 @@
-<!--pages/shejiao/index.wxml-->
-<text>pages/shejiao/index.wxml</text>
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="list-container">
+  <view class="list-item">
+      <text class="list-name" bindtap="gotoshujia">换单词书</text>
+      <image class="list-icon" src="/images/chevron.png"></image>
+  </view>
+  <view class="list-item" bindtap="showDescription">
+    <text class="list-name">赞赏作者</text>
+    <image class="list-icon" src="/images/chevron.png"></image>
+  </view>
+  </view>
+</view>
