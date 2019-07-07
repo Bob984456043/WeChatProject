@@ -7,7 +7,6 @@
     "pages/search/search",
     "pages/shejiao/index",
     "pages/shejiao/description/description",
-    "pages/shejiao/feedback/feedback",
     "pages/shejiao/using/using",
     "pages/authorize/authorize"
   ],

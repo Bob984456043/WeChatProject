@@ -5,9 +5,16 @@
   </view>
   <view class="list-container">
   <view class="list-item">
-      <text class="list-name" bindtap="gotoshujia">换单词书</text>
-      <image class="list-icon" src="/images/chevron.png"></image>
+      <text class="list-name">换单词书</text>
   </view>
+  <radio-group bindchange="bookChange">
+        <radio value="cet4">cet4</radio>
+        <radio value="cet4_import">cet4 import</radio>
+        <radio value="cet6">cet6</radio>
+        <radio value="cet6_import">cet6 import</radio>
+        <radio value="kaoyan">考研</radio>
+        <radio value="kaoyan_import">考研 import</radio>
+  </radio-group>
   <view class="list-item" bindtap="showDescription">
     <text class="list-name">赞赏作者</text>
     <image class="list-icon" src="/images/chevron.png"></image>
