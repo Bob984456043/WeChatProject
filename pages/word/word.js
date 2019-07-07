@@ -1,18 +1,23 @@
 var vocabulary = require('../../data/vocabulary.js');
 var five = require('../../data/500.js');
-var cetfour=require('../../data/cet4.js');
-
+var booklis = {
+  "cet4": require('../../data/cet4.js'),
+  "cet4_import": require('../../data/cet4_import.js'),
+  "cet6": require('../../data/cet6.js'),
+  "cet6_import": require('../../data/cet6_import.js'),
+  "kaoyan": require('../../data/kaoyan.js'),
+  "kaoyan_import": require('../../data/kaoyan_import.js')
+}
 Page({
     data: {
       innerAudioContext: null,
-      
     },
 
     onLoad: function (options) {
       this.backgroundAudioManager = wx.getBackgroundAudioManager();
         var idx = Math.floor(Math.random() * 100) + 1;
         console.log(idx);
-        var word = cetfour.wordList[idx];
+      var word = booklis[wx.getStorageSync("book")].wordList[idx];
         var that = this;
         wx.request({
           url: 'https://api.shanbay.com/bdc/search?word=' + word,
@@ -53,7 +58,7 @@ Page({
             showNot: false
         })
         var idx = Math.floor(Math.random() * 450) + 1
-        var word = vocabulary.wordList[idx];
+        var word = booklis[wx.getStorageSync("book")].wordList[idx];
         var that = this;
         console.log(idx);
         wx.request({

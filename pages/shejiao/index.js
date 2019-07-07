@@ -89,6 +89,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  bookChange:function(e){
+    wx.setStorageSync('book', e.detail.value);
+  },
   showUsing: function () {
     wx.navigateTo({
       url: './using/using',
