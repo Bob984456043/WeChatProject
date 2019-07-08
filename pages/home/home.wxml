@@ -1,1 +1,1 @@
-<text>显示新的全局变量值：{{theGlobalData}}</text>
+<text>背了{{theGlobalData}}个单词</text>
