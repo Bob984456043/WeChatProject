@@ -1,4 +1,0 @@
-<view class="container">
-    <image src='/images/description.png' mode='aspectFit' bindtap="previewImage" class='good-img'></image>
-    <text class='title-content'>点击赞赏码,即可赞赏啦~</text>
-</view>

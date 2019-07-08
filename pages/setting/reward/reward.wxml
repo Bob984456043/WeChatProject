@@ -1,0 +1,5 @@
+<view class="container">
+    <image src='/images/reward.png'  mode="widthFix" bindtap="previewImage"></image>
+    <text class='title-content'>点击赞赏码,即可赞赏啦~</text>
+    <text class='title-content'>（先点开图片，再扫，嘘~）</text>
+</view>

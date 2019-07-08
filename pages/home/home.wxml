@@ -1,1 +1,5 @@
-<text>背了{{theGlobalData}}个单词</text>
+<view class="container">
+  <image class="logo" mode="widthFix" src="/images/illya.png"></image>
+  <view wx:if="{{count >= 20}}"> 爱你呦，biu~ </view>
+  <view wx:else>伊莉雅温馨提醒:任务进度：{{count}} / 20 </view>
+</view>

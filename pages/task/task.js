@@ -11,13 +11,14 @@ var booklis = {
 var app = getApp()
 Page({
   data: {
-    innerAudioContext: null,
+    innerAudioContext: null
   },
 
   onLoad: function(options) {
     this.backgroundAudioManager = wx.getBackgroundAudioManager();
-    var idx = Math.floor(Math.random() * 100) + 1;
+    var idx = Math.floor(Math.random() * 450) + 1;
     console.log(idx);
+    wx.setStorageSync("book", "cet4");
     var word = booklis[wx.getStorageSync("book")].wordList[idx];
     var that = this;
     wx.request({
@@ -36,29 +37,32 @@ Page({
       fail: function() {},
       complete: function() {}
     })
+  },
 
+  onReady: function () {
+    this.toast = this.selectComponent("#toast");
   },
 
   show: function() {
+    this.toast.showToast('笨蛋')
     this.setData({
-      showNot: true
-    })
+        showNot: true
+      })
   },
 
-  next: function() {
+  next: function () {
     this.setData({
       showNot: false
-    })
-    var idx = Math.floor(Math.random() * 450) + 1
+    });
+    var idx = Math.floor(Math.random() * 450) + 1;
     var word = booklis[wx.getStorageSync("book")].wordList[idx];
     var that = this;
     app.globalData.countWordMemorized = app.globalData.countWordMemorized + 1;
-    console.log(idx);
     wx.request({
       url: 'https://api.shanbay.com/bdc/search?word=' + word,
       data: {},
       method: 'GET',
-      success: function(res) {
+      success: function (res) {
         console.log(res)
         that.setData({
           content: res.data.data.content,
@@ -67,8 +71,8 @@ Page({
           definition: res.data.data.definition
         })
       },
-      fail: function() {},
-      complete: function() {}
+      fail: function () { },
+      complete: function () { }
     })
   },
 

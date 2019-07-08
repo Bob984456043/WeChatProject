@@ -1,13 +1,12 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/word/word",
+    "pages/task/task",
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
-    "pages/shejiao/index",
-    "pages/shejiao/description/description",
-    "pages/shejiao/using/using",
+    "pages/setting/setting",
+    "pages/setting/reward/reward",
     "pages/authorize/authorize"
   ],
   "tabBar": {
@@ -21,7 +20,7 @@
           "selectedIconPath": "images/home-selected.png"
       },
       {
-        "pagePath": "pages/word/word",
+        "pagePath": "pages/task/task",
         "text": "今日任务",
         "iconPath": "images/danci.png",
         "selectedIconPath": "images/danci-selected.png"
@@ -33,10 +32,10 @@
         "selectedIconPath": "images/search-selected.png"
       },
       {
-        "pagePath":"pages/shejiao/index",
-        "text":"社交",
-        "iconPath":"images/shejiao.jpg",
-        "selectedIconPath":"images/shejiao-selected.jpg"
+        "pagePath":"pages/setting/setting",
+        "text":"设置",
+        "iconPath":"images/setting.jpg",
+        "selectedIconPath":"images/setting-selected.jpg"
       }
     ]
   },

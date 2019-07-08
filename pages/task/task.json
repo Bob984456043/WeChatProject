@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "每日任务了啦",
+  "usingComponents": {
+    "toast": "../../common/toast/toast"
+  }
+}
