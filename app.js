@@ -63,6 +63,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    // 已背诵的单词数
+    countWordMemorized: 0
   }
 })

@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/fengmian/index",
+    "pages/home/home",
     "pages/word/word",
     "pages/index/index",
     "pages/logs/logs",
@@ -15,7 +15,7 @@
     "borderStyle": "white",
     "list": [
       {
-         "pagePath": "pages/fengmian/index",
+         "pagePath": "pages/home/home",
          "text": "主页",
           "iconPath": "images/home.png",
           "selectedIconPath": "images/home-selected.png"
